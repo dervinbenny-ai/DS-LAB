@@ -20,6 +20,7 @@ if(arr[mid]==k)
 {
 printf("%d found at position %d\n",k,mid+1);
 f=1;
+break;
 }
 else if(arr[mid]<k)
 {
@@ -28,11 +29,12 @@ low=mid+1;
 else
 {
 high=mid-1;
-}
+
 }
 if(f==0);
 {
-printf("%d not found in the array %d\n",k,1+1);
+printf("%d not found in the array \n",k);
+}
 }
 return 0;
 }
